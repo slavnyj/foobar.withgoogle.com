@@ -41,3 +41,25 @@ Output:
     15129,169,25,1
 
 Use verify [file] to test your solution and see how it does. When you are finished editing your code, use submit [file] to submit your answer. If your solution passes the test cases, it will be removed from your home folder.
+
+
+import math
+
+def solution (area):
+    countList = []
+    calcCountSolarPanel(area, countList)
+    return countList
+
+
+def calcCountSolarPanel(area, countList):
+    firstBiggest = 0
+    
+    if area >= 1 and area <= 1000000:
+        interimArea = int(math.sqrt(area))
+        if interimArea < 0:
+            return firstBiggest
+        else: 
+            firstBiggest = int(interimArea ** 2)
+            diffArea = area - firstBiggest
+            countList.append(firstBiggest)
+            calcCountSolarPanel(diffArea, countList)
