@@ -1,3 +1,4 @@
+![Image of foo.bar google challenge](https://github.com/slavnyj/foobar.withgoogle.com/blob/gh-pages/foobarChallenge.png)
 # Google foo.bar challenge
 https://foobar.withgoogle.com/
 
